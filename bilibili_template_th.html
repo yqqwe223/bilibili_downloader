@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili: คุณสามารถใช้เครื่องมือของเราดาวน์โหลดวิดีโอหรือ GIF ใดก็ได้จาก Bilibili และแปลงเป็นรูปแบบ MP3 หรือ GIF รออะไรอยู่? ลองใช้เครื่องมือดาวน์โหลดวิดีโอ Bilibili ของเราเลย!">
+<meta name="keywords" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili, ดาวน์โหลดวิดีโอ B站, โหลดคลิป Bilibili">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili — รับวิดีโอและ GIF จาก Bilibili">
+<meta name="twitter:description" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili: คุณสามารถใช้เครื่องมือของเราดาวน์โหลดวิดีโอหรือ GIF ใดก็ได้จาก Bilibili และแปลงเป็นรูปแบบ MP3 หรือ GIF รออะไรอยู่? ลองใช้เครื่องมือดาวน์โหลดวิดีโอ Bilibili ของเราเลย!">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png">
+<meta name="twitter:image:alt" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili — รับวิดีโอและ GIF จาก Bilibili">
+
+<meta property="og:title" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili — รับวิดีโอและ GIF จาก Bilibili" />
+<meta property="og:description" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili: คุณสามารถใช้เครื่องมือของเราดาวน์โหลดวิดีโอหรือ GIF ใดก็ได้จาก Bilibili และแปลงเป็นรูปแบบ MP3 หรือ GIF รออะไรอยู่? ลองใช้เครื่องมือดาวน์โหลดวิดีโอ Bilibili ของเราเลย!" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png" />
+<meta property="og:image:alt" content="เครื่องมือดาวน์โหลดวิดีโอ Bilibili — รับวิดีโอและ GIF จาก Bilibili" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>เครื่องมือดาวน์โหลดวิดีโอ Bilibili — รับวิดีโอและ GIF จาก Bilibili</title>
+</head>
+<body>
+
+	<style>
+		:root {
+			--primary: #fb7299;
+			--bg: #fafafa;
+			--text: #333;
+			--light-gray: #eaeaea;
+			--border: #ddd;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+			line-height: 1.7;
+			color: var(--text);
+			background-color: var(--bg);
+			
+			
+			margin: 0 auto;
+		}
+		header {
+			text-align: center;
+			padding: 30px 0 20px;
+		}
+		h1 {
+			font-size: 2.4rem;
+			color: var(--primary);
+			margin-bottom: 12px;
+		}
+		.subtitle {
+			font-size: 1.1rem;
+			color: #666;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		.notice {
+			background-color: #fff8e1;
+			border-left: 4px solid #ffc107;
+			padding: 16px;
+			margin: 20px 0;
+			border-radius: 4px;
+			font-size: 0.95rem;
+		}
+		section {
+			margin: 30px 0;
+		}
+		h2 {
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+			color: #222;
+			border-bottom: 2px solid var(--light-gray);
+			padding-bottom: 8px;
+		}
+		h3 {
+			font-size: 1.4rem;
+			margin: 24px 0 12px;
+			color: #333;
+		}
+		p {
+			margin: 12px 0;
+		}
+		ul, ol {
+			padding-left: 24px;
+			margin: 12px 0;
+		}
+		li {
+			margin-bottom: 8px;
+		}
+		.feature-table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 16px 0;
+			font-size: 0.95rem;
+		}
+		.feature-table th,
+		.feature-table td {
+			padding: 12px;
+			text-align: left;
+			border-bottom: 1px solid var(--border);
+		}
+		.feature-table th {
+			background-color: #f5f5f5;
+		}
+		.step {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			margin: 16px 0;
+			box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+		}
+		.step h4 {
+			color: var(--primary);
+			margin-bottom: 10px;
+			font-size: 1.2rem;
+		}
+		.faq-item {
+			margin-bottom: 16px;
+		}
+		.faq-item strong {
+			color: var(--primary);
+		}
+		.nearfooter {
+			text-align: center;
+			padding: 30px 0 20px;
+			color: #777;
+			font-size: 0.95rem;
+			border-top: 1px solid var(--border);
+			margin-top: 30px;
+		}
+		
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+		
+        .download-link {
+            display: block;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #f6f6f6, #ffffff);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-link:hover {
+            background: linear-gradient(135deg, #ffffff, #fafafa);
+            border-color: var(--primary-color);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(251, 114, 153, 0.15);
+        }
+
+        .download-link i {
+            font-size: 1rem;
+        }
+		
+       .download-links-card {
+            flex: 0 0 300px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+        }
+		
+		
+		
+		code {
+			background: #f1f1f1;
+			padding: 2px 6px;
+			border-radius: 4px;
+			font-family: monospace;
+			font-size: 0.95em;
+		}
+		a {
+			color: var(--primary);
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		@media (max-width: 768px) {
+		body {
+			padding: 15px;
+		}
+		h1 {
+			font-size: 1.8rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		}
+	</style>
+<div class="container-fluid text-break">
+<div class="row" style="background:linear-gradient(135deg, #FF6699 0%, #00A1D6 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='site logo'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+	
+<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+		<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+			<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>หน้าแรก</a>&nbsp;&nbsp;</li>
+
+			<div class="text-end mb-3">
+				<div class="dropdown d-inline-block">
+					<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+							type="button"
+							id="langDropdown"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+					<i class="fa-solid fa-video"></i>
+					<span>ตัวดาวน์โหลดวิดีโอ</span>
+					</button>
+			
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+						{{toollistele|safe}}
+					</ul>
+				</div>&nbsp;&nbsp;
+			</div>
+			
+			<div class="text-end mb-3">
+				<div class="dropdown d-inline-block">
+					<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+							type="button"
+							id="langDropdown"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+					<i class="bi bi-globe"></i>
+					<span>🇹🇭 ไทย</span>
+					</button>
+			
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+						{{langlistele|safe}}
+					</ul>
+				</div>
+			</div>
+		</ul>
+	 </div>
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row" >
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50' >
+			<h1 style='font-family: "Tektur",sans-serif;'>เครื่องมือดาวน์โหลดวิดีโอ Bilibili</h1>
+			<p >ดาวน์โหลดความละเอียดสูง · แยกเสียงและวิดีโอ · ส่งออกซับไตเติ้ล/คอมเมนต์ · ใช้งานออนไลน์ฟรี</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center'>
+		
+		<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="วางลิงก์ bilibili.com ที่นี่" >
+		</div>
+		<div style='text-align:center;color:#2D3E50'>
+		ตัวอย่าง URL : https://bilibili.com/video/BV1CiUjBkEoo
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> ดาวน์โหลดวิดีโอ</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">Downloading...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+<div class="row" style='margin-top:3em;background-color:#F5FAFB'>
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+	
+<header>
+<h1>🎬 ตัวดาวน์โหลดวิดีโอ Bilibili</h1>
+		<p class="subtitle">ดาวน์โหลดความละเอียดสูง · แยกเสียงกับวิดีโอ · ส่งออกข้อความลอย (Danmaku) · ใช้งานฟรีผ่านเว็บ</p>
+		<div class="notice">
+		🔒 <strong>คำรับรองอย่างจริงจัง:</strong> เครื่องมือนี้<strong>ไม่เก็บลิงก์วิดีโอของผู้ใช้</strong> และ<strong>ไม่รวบรวมข้อมูลส่วนบุคคลใดๆ ทั้งสิ้น</strong> กรุณาใช้<strong>เพื่อวัตถุประสงค์ส่วนตัวเท่านั้น ไม่ใช่เชิงพาณิชย์</strong> โปรดให้เกียรติลิขสิทธิ์ และสนับสนุนเนื้อหาต้นฉบับ!
+		</div>
+	</header>
+	
+	<section>
+		<h2>🔍 เครื่องมือนี้ทำอะไรได้บ้าง?</h2>
+		<table class="feature-table">
+		<tr>
+			<th>ฟีเจอร์</th>
+			<th>คำอธิบาย</th>
+		</tr>
+		<tr>
+			<td>📹 ดาวน์โหลดวิดีโอหลายความละเอียด</td>
+			<td>รองรับ 360P, 480P, 720P, 1080P (บางวิดีโอรองรับ 1080P+) รวมเสียงกับวิดีโออัตโนมัติเป็นไฟล์ MP4 มาตรฐาน สามารถเล่นได้ทันที</td>
+		</tr>
+		<tr>
+			<td>🎧 แยกเสียงอย่างเดียว</td>
+			<td>ดึงเสียงคุณภาพสูง AAC/MP3 ได้ในคลิกเดียว เหมาะสำหรับบันทึกพอดแคสต์ เพลง หรือเนื้อหาพากย์เสียง</td>
+		</tr>
+		<tr>
+			<td>💬 ส่งออกไฟล์ข้อความลอย (Danmaku)</td>
+			<td>ดาวน์โหลดไฟล์ข้อความลอยต้นฉบับ (.xml) แล้วนำเข้าลงโปรแกรมเล่นอย่าง PotPlayer หรือ VLC เพื่อดูข้อความลอยแบบออฟไลน์</td>
+		</tr>
+		<tr>
+			<td>🧩 รองรับซับไตเติล (อยู่ในช่วงทดสอบ)</td>
+			<td>หากวิดีโอมีซับไตเติลทางการ คุณสามารถดาวน์โหลดไฟล์ซับไตเติล .srt ได้พร้อมกัน (ต้องเปิดใช้งานฟีเจอร์ซับไตเติลโดยผู้อัปโหลด)</td>
+		</tr>
+		<tr>
+			<td>🌐 รองรับทุกแพลตฟอร์ม</td>
+			<td>ใช้งานได้ดีบน Windows / macOS / Linux / iOS / Android รองรับทุกเบราว์เซอร์หลัก</td>
+		</tr>
+		<tr>
+			<td>🚀 วิเคราะห์เร็ว</td>
+			<td>ใช้อัลกอริทึมวิเคราะห์ที่ปรับปรุงแล้ว ดึงข้อมูลวิดีโอได้ภายใน 3 วินาทีโดยเฉลี่ย</td>
+		</tr>
+		</table>
+		<p><strong>✅ ปัจจุบันรองรับ:</strong> วิดีโอทั่วไป (รหัส AV / BV), วิดีโอหลายตอน (เนื้อหาหลายส่วน)<br>
+		<strong>❌ ยังไม่รองรับ:</strong> เนื้อหาสำหรับสมาชิกพรีเมียมเท่านั้น อนิเมะ ภาพยนตร์ ซีรีส์ หรือวิดีโอบันทึกการถ่ายทอดสด ที่ถูกจำกัดด้วยระบบ DRM</p>
+	</section>
+	
+	<section>
+		<h2>📥 คู่มือการใช้งานอย่างละเอียด (3 ขั้นตอนเสร็จในพริบตา!)</h2>
+	
+		<div class="step">
+		<h4>ขั้นตอนที่ 1: รับลิงก์วิดีโอ Bilibili</h4>
+		<ol>
+			<li>เปิด <a href="https://www.bilibili.com" target="_blank">เว็บไซต์ทางการ Bilibili</a></li>
+			<li>เล่นวิดีโอที่คุณต้องการดาวน์โหลด</li>
+			<li>คัดลอกลิงก์เต็ม (URL) จากแถบที่อยู่ของเบราว์เซอร์:<br>
+			<code>https://www.bilibili.com/video/BV1Xx411c7mU</code><br>
+			หรือ <code>https://www.bilibili.com/video/av12345678</code>
+			</li>
+		</ol>
+		<p><strong>💡 เคล็ดลับ:</strong> หากวิดีโอมีหลายตอน (เช่น ซีรีส์บทเรียน) ให้ตรวจสอบว่าลิงก์มีพารามิเตอร์เช่น <code>?p=2</code> ตัวอย่างเช่น:<br>
+			<code>https://www.bilibili.com/video/BV1xx411c7mu?p=3</code><br>
+			เพื่อดาวน์โหลดตอนที่ 3 ได้ตรงเป้าหมาย</p>
+		</div>
+	
+		<div class="step">
+		<h4>ขั้นตอนที่ 2: วางลิงก์และวิเคราะห์</h4>
+		<ol>
+			<li>กลับมายังหน้าเว็บนี้</li>
+			<li><strong>วางลิงก์ Bilibili</strong> ที่คัดลอกไว้ลงในช่องด้านบน</li>
+			<li>คลิกปุ่ม <strong>【วิเคราะห์วิดีโอ】</strong></li>
+		</ol>
+		<p>⏳ รอ 1–5 วินาที ระบบจะวิเคราะห์ข้อมูลวิดีโออัตโนมัติ รวมถึงชื่อวิดีโอ ชื่อผู้อัปโหลด (UP), ความยาว และความละเอียดที่ใช้ได้</p>
+		</div>
+	
+		<div class="step">
+		<h4>ขั้นตอนที่ 3: เลือกรูปแบบและดาวน์โหลด</h4>
+		<p>หลังวิเคราะห์สำเร็จ หน้าเว็บจะแสดงตัวเลือกดังนี้:</p>
+		<ul>
+			<li><strong>📹 ส่วนดาวน์โหลดวิดีโอ:</strong> 1080P / 720P / 480P / 360P (MP4, เสียงกับภาพรวมกันเรียบร้อย)</li>
+			<li><strong>🔊 ส่วนดาวน์โหลดเสียง:</strong> เสียงเท่านั้น (AAC) หรือแปลงเป็น MP3</li>
+			<li><strong>💬 ส่วนข้อความลอยกับซับไตเติล:</strong> ดาวน์โหลดข้อความลอย (.xml) หรือซับไตเติล (.srt)</li>
+		</ul>
+		<p><strong>📌 คำแนะนำการใช้งาน:</strong></p>
+		<ul>
+			<li>ต้องการเก็บประสบการณ์วิดีโอแบบครบถ้วน? → ดาวน์โหลด <strong>วิดีโอ 1080P + ข้อความลอย.xml</strong></li>
+			<li>ต้องการฟังแค่เสียง? → ดาวน์โหลด <strong>เสียง MP3</strong></li>
+			<li>ต้องการใช้เป็นคลิปตัดต่อ? → เลือก <strong>MP4 ความละเอียดสูงสุดที่มี</strong></li>
+		</ul>
+		<p>คลิกที่ปุ่มที่ต้องการ เบราว์เซอร์จะเริ่มดาวน์โหลดไฟล์อัตโนมัติ (มักจะบันทึกในโฟลเดอร์ “Downloads”)</p>
+		</div>
+	</section>
+	
+	<section>
+		<h2>⚙️ คำอธิบายเชิงเทคนิค (สำหรับนักพัฒนาและผู้ใช้ขั้นสูง)</h2>
+		<ul>
+		<li><strong>การประมวลผลเสียง/วิดีโอ:</strong> วิดีโอความละเอียดสูงบางส่วนของ Bilibili ใช้การส่งแบบ DASH (แยกสตรีมวิดีโอกับเสียง) เครื่องมือนี้จะรวมทั้งสองส่วนอัตโนมัติที่เซิร์ฟเวอร์ และส่งออกเป็นไฟล์ MP4 เดียว</li>
+		<li><strong>แหล่งที่มาของข้อความลอย:</strong> ข้อมูลข้อความลอยมาจาก API สาธารณะของ Bilibili คงไว้ซึ่งข้อมูลเวลาและรูปแบบต้นฉบับ</li>
+		<li><strong>ไม่ผ่านพร็อกซี/ไม่มีแคช:</strong> ไฟล์วิดีโอทั้งหมดดาวน์โหลดตรงจาก CDN ของ Bilibili เซิร์ฟเวอร์เราไม่เป็นตัวกลาง หรือจัดเก็บเนื้อหาใดๆ</li>
+		<li><strong>เปิดซอร์สโค้ด ตรวจสอบได้:</strong> โค้ดหลักของโครงการนี้เผยแพร่บน GitHub ยินดีรับการตรวจสอบและร่วมพัฒนา!</li>
+		</ul>
+	</section>
+	
+	<section>
+		<h2>⚠️ ข้อควรรู้และข้อความทางกฎหมาย</h2>
+		<ol>
+		<li><strong>การปฏิบัติตามลิขสิทธิ์:</strong> ห้ามดาวน์โหลดเนื้อหาที่ได้รับความคุ้มครองลิขสิทธิ์ (เช่น ภาพยนตร์ อนิเมะ การถ่ายทอดกีฬา) เพื่อเผยแพร่ ใช้ในเชิงพาณิชย์ หรืออัปโหลดซ้ำ โปรดให้เกียรติผลงานของผู้อัปโหลด และสนับสนุนเนื้อหาต้นฉบับ!</li>
+		<li><strong>ห้ามใช้งานในทางที่ผิด:</strong> ห้ามใช้เครื่องมือนี้เพื่อดึงข้อมูลจำนวนมาก อัตโนมัติ หรือบริการเชิงพาณิชย์ การร้องขอความถี่สูงจะถูกจำกัดอัตราทันที</li>
+		<li><strong>ข้อปฏิเสธความรับผิด:</strong> ข้อพิพาทใดๆ ที่เกี่ยวข้องกับลิขสิทธิ์อันเนื่องมาจากการใช้เครื่องมือนี้ ทางแพลตฟอร์มไม่เกี่ยวข้อง โปรดปฏิบัติตาม “กฎหมายลิขสิทธิ์แห่งสาธารณรัฐประชาชนจีน” และข้อกำหนดของแพลตฟอร์มที่เกี่ยวข้อง</li>
+		</ol>
+	</section>
+
+	<section>
+		<h2>❓ คำถามที่พบบ่อย (FAQ)</h2>
+		<div class="faq-item">
+		<strong>Q1: ทำไมคลิกดาวน์โหลดแล้วไม่มีอะไรเกิดขึ้น?</strong><br>
+		A: กรุณาตรวจสอบ:<br>
+		- เบราว์เซอร์กำลังบล็อกป๊อปอัปอยู่หรือไม่? → อนุญาตป๊อปอัปจากเว็บนี้<br>
+		- ใช้ส่วนขยายบล็อกโฆษณา (เช่น uBlock) อยู่หรือไม่? → ลองปิดชั่วคราวแล้วลองใหม่<br>
+		- อินเทอร์เน็ตเสถียรหรือไม่? → เปลี่ยนเครือข่าย หรือลองใหม่ภายหลัง
+		</div>
+		<div class="faq-item">
+		<strong>Q2: วิดีโอ MP4 ที่ดาวน์โหลดมากระตุก หรือภาพเพี้ยน?</strong><br>
+		A: อาจเกิดจากวิดีโอบิตเรตสูง ซึ่งกดดันตัวถอดรหัสของอุปกรณ์ แนะนำให้ลองดาวน์โหลดเวอร์ชัน <strong>720P</strong> หรือใช้โปรแกรมเล่นมืออาชีพ เช่น VLC หรือ PotPlayer
+		</div>
+		<div class="faq-item">
+		<strong>Q3: ดาวน์โหลดวิดีโอสำหรับสมาชิกพรีเมียมได้หรือไม่?</strong><br>
+		A: <strong>ไม่ได้</strong> เนื้อหาสำหรับสมาชิกถูกปกป้องด้วยระบบ DRM ของ Bilibili และเครื่องมือนี้ไม่สามารถผ่านการตรวจสอบได้
+		</div>
+		<div class="faq-item">
+		<strong>Q4: รองรับการดาวน์โหลดเพลย์ลิสต์หรือรายการโปรดทั้งหมดไหม?</strong><br>
+		A: เวอร์ชันปัจจุบันรองรับเฉพาะการดาวน์โหลดวิดีโอหรือตอนเดียวเท่านั้น <strong>ฟีเจอร์ดาวน์โหลดจำนวนมากกำลังอยู่ระหว่างพัฒนา</strong> ติดตามอัปเดตได้เลย!
+		</div>
+		<div class="faq-item">
+		<strong>Q5: ใช้บนมือถือได้ไหม?</strong><br>
+		A: ได้แน่นอน! รองรับทั้ง iOS และ Android หลังดาวน์โหลด คุณจะพบไฟล์ได้ในแอป “ไฟล์” (iOS) หรือ “ตัวจัดการดาวน์โหลด” (Android)
+		</div>
+		
+		
+		<div class='nearfooter'>
+		
+		<p>หากคุณพบปัญหา มีข้อเสนอแนะ หรือต้องการสนับสนุนเราในการพัฒนาต่อเนื่อง โปรดติดต่อเรา:<br>
+		📧 อีเมล: <a href="{{mailtocontactmail}}">{{contactmail}}</a><br>
+		💬 GitHub Issues: <a href="{{githublink}}" target="_blank">{{githublink}}</a></p>
+		<p style="margin-top: 20px; font-style: italic;">
+		ขอบคุณที่เลือก <strong>ตัวดาวน์โหลดวิดีโอ Bilibili</strong> —<br>
+		ให้เนื้อหาดีๆ ไม่ต้องถูกจำกัดด้วยอินเทอร์เน็ตอีกต่อไป<br>
+		บันทึกไว้ดูออฟไลน์ กลับมาดูเมื่อไหร่ก็ได้ ดูได้อย่างอิสระ 💫
+		</p>
+		
+		</div>
+		
+		
+		
+	</section>
+
+	<footer class="footer">
+		<p>© {{year_string}} เครื่องมือดาวน์โหลดวิดีโอ Bilibili. สงวนลิขสิทธิ์ทุกประการ</p>
+		<p>เว็บไซต์นี้ไม่มีความเกี่ยวข้องอย่างเป็นทางการกับ bilibili, Inc. | 
+		<a href="/privacy-policy" style="color: #00c6ff;">นโยบายความเป็นส่วนตัว</a> | 
+		<a href="/terms-of-service" style="color: #00c6ff;">ข้อกำหนดการใช้งาน</a> | 
+		<a href="/about-us" style="color: #00c6ff;">เกี่ยวกับเรา</a> | 
+		<a href="/contact-us" style="color: #00c6ff;">ติดต่อเรา</a>
+		</p>
+		<p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+			เครื่องมือนี้มีไว้เพื่อการศึกษาและการวิจัยส่วนบุคคลเท่านั้น ผู้ใช้ต้องเป็นผู้รับผิดชอบต่อความเสี่ยงด้านกฎหมายทั้งหมดด้วยตนเอง
+		</p>
+		<p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+			การดาวน์โหลดเนื้อหาที่มีลิขสิทธิ์อาจละเมิดกฎหมายและข้อบังคับ โปรดปฏิบัติตามกฎหมายในพื้นที่ของท่าน
+		</p>
+	</footer>
+
+
+
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />Converting Video to Mp3</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('NO result');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">Download Video Mp3</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />Converting Video to Gif</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('NO result');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">Download Video GIF</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />กำลังดึงข้อมูลวิดีโอ</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem_bilibili', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('NO result');
+				return;
+				}
+				
+				
+				
+
+			var vtitle=response.vtitle;
+			//alert(htimage);
+			var vdes=response.vdes;
+			//alert(htsimage);
+			var vthu=encodeURI(response.vthu);
+			var vwebpage_url=encodeURI(response.vwebpage_url);
+			var vuploader=response.vuploader;
+			var vupload_date=response.vupload_date;
+			var vduration=response.vduration;
+			var vwidth=response.vwidth;
+			var vheight=response.vheight;
+			var vres=response.vres;
+			var vaspect_ratio=response.vaspect_ratio;
+			var vlike_count=response.vlike_count;
+			var vurl=encodeURI(response.vurl);
+			var vurl1=encodeURI(response.vurl1);
+			var vurl2=encodeURI(response.vurl2);
+			var vurl3=encodeURI(response.vurl3);
+			//alert(trunttext);
+			//var formatslist = response.formatslist;
+			//var thumbnailslist = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" style="margin-bottom:2rem"><div class="col-sm-6" ><h4>'+vtitle+'</h4><div><img src="'+vthu+'"  class="img-fluid" /></div></div>';
+			
+			
+
+			var intext=intext+'<div class="col-sm-6" ><div class="download-links-card">';
+			var intext=intext+'<h5 class="links-title" style="margin-top:2rem"><i class="fa-list"></i> รายการลิงก์ดาวน์โหลดวิดีโอความละเอียดสูง</h5>'
+			var intext=intext+'<a href="'+vurl+'" class="download-link text-decoration-none" target="_blank"><i class="fa fa-download"></i> ลิงก์ดาวน์โหลด 1</a>';
+			var intext=intext+'<a href="'+vurl1+'" class="download-link text-decoration-none" target="_blank"><i class="fa fa-download"></i> ลิงก์ดาวน์โหลด 2</a>';
+			var intext=intext+'<a href="'+vurl2+'" class="download-link text-decoration-none" target="_blank"><i class="fa fa-download"></i> ลิงก์ดาวน์โหลด 3</a>';
+			var intext=intext+'<a href="'+vurl3+'" class="download-link text-decoration-none" target="_blank"><i class="fa fa-download"></i> ลิงก์ดาวน์โหลด 4</a>';
+			var intext=intext+'</div></div></div>';
+			
+			
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>หัวข้อ: </b>'+vtitle+'</div><div><b>คำอธิบาย: </b>'+vdes+'</div><div><b>ผู้ อัปโหลด: </b>'+vuploader+'</div><div><b>ลิงก์วิดีโอ: </b><a href="'+vwebpage_url+'" class="text-decoration-none" style="color:black">คลิกที่นี่</a></div><div><b>ความยาว: </b>'+vduration+' วินาที</div></div>';
+			
+			var intext=intext+'<div class="col-sm-6" ><div><b>วันที่อัปโหลด: </b>'+vupload_date+'</div><div><b>ความกว้าง: </b>'+vwidth+'</div><div><b>ความสูง: </b>'+vheight+'</div><div><b>ความละเอียด: </b>'+vres+'</div><div><b>อัตราส่วนภาพ: </b>'+vaspect_ratio+'</div><div><b>จำนวนการกดถูกใจ: </b>'+vlike_count+'</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+vtitle+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+vtitle+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+vtitle+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+vtitle+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+vtitle+'"><span  style="font-size:1em“>pinterest</span></a><a class="reddit" data-title="'+vtitle+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+vtitle+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+vtitle+'"><span  style="font-size:1em“>twitter</span></a><a class="viber" data-title="'+vtitle+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+vtitle+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+vtitle+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}_'+selectedValue;
+	}
+  });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>
